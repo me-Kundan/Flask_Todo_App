@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-md-8">
+    <h3>Update Task</h3>
+    <form method="POST">
+      <input class="form-control mb-2" name="title" value="{{ task.title }}" required>
+      <textarea class="form-control mb-2" name="description" rows="5">{{ task.description }}</textarea>
+      <button class="btn btn-success">Save</button>
+      <a href="/tasks" class="btn btn-secondary">Cancel</a>
+    </form>
+  </div>
+</div>
+{% endblock %}

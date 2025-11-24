@@ -1,0 +1,19 @@
+body {
+    background: #3b3654;
+    color: #f8f9fa;
+}
+
+
+/* small profile circle */
+
+.profile-circle {
+    width: 36px;
+    height: 36px;
+    background: #7b61ff;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: #fff;
+}

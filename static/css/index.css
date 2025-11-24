@@ -1,0 +1,100 @@
+.page-bg {
+    background: #3b3654;
+    min-height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-card {
+    background: #2c273f;
+    border-radius: 14px;
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.45);
+}
+
+
+/* left pane */
+
+.left-pane {
+    flex: 1;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    min-height: 520px;
+}
+
+.left-pane .overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(52, 40, 72, 0.2), rgba(18, 14, 28, 0.6));
+}
+
+.left-pane .top-btn {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+}
+
+
+/* text bottom left */
+
+.left-pane .text-box {
+    position: absolute;
+    left: 30px;
+    bottom: 36px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+
+/* right pane */
+
+.right-pane {
+    flex: 1;
+    padding: 46px;
+    color: #fff;
+}
+
+.right-pane h2 {
+    font-size: 42px;
+    margin-bottom: 6px;
+}
+
+.input-custom {
+    background: #3a3450;
+    border: 1px solid #4a4268;
+    color: #fff;
+}
+
+.input-custom:focus {
+    box-shadow: 0 0 0 0.2rem rgba(123, 97, 255, 0.25);
+    border-color: #7b61ff;
+}
+
+.big-btn {
+    background: #7b61ff;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.small-muted {
+    color: #bbb;
+    font-size: 14px;
+}
+
+@media (max-width: 900px) {
+    .auth-card {
+        flex-direction: column;
+    }
+    .left-pane {
+        min-height: 240px;
+    }
+}
